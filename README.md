@@ -58,17 +58,8 @@ For those who like to work in VS Code, you can also run Jupyter notebooks from w
 ### Section 1: Introduction (20 minutes)
 - Motivation for Bayesian time series analysis
   - Handling uncertainty
-  - Incorporating prior knowledge
+  - Incorporating prior knowledge 
   - Flexibility for complex patterns
-- Brief review of Bayesian inference concepts
-  - Bayes' theorem
-  - Prior, likelihood, and posterior distributions
-  - Markov Chain Monte Carlo (MCMC) sampling
-- Introduction to PyMC
-  - Library overview and installation
-  - Basic PyMC model structure
-
-### Section 2: Time Series Fundamentals (10 minutes)
 - Key characteristics of time series data
   - Trend, seasonality, and noise components
   - Stationarity and autocorrelation
@@ -77,25 +68,31 @@ For those who like to work in VS Code, you can also run Jupyter notebooks from w
   - Normalization/standardization
   - Trend and seasonality decomposition
 
+### Section 2: Bayesian Inference and PyMC (10 minutes)
+- Brief review of Bayesian inference concepts
+  - Bayes' theorem
+  - Prior, likelihood, and posterior distributions
+  - Markov Chain Monte Carlo (MCMC) sampling
+- Introduction to PyMC
+  - API overview
+  - Basic PyMC model structure
+  - Model fitting and inference
+
 ### Section 3: Basic Bayesian Time Series Models (20 minutes)
+- Gaussian Random Walks in PyMC
+  - Model specification and implementation
+  - Parameter interpretation
+  - Applications to time-varying parameters
 - Bayesian regression for time series
   - Linear trend models
   - Polynomial trends
   - Seasonal components with Fourier terms
-- Autoregressive (AR) models in PyMC
-  - Model specification
-  - Parameter estimation
-  - Interpretation of results
-- Live coding example: Fitting a basic seasonal trend model
+- Live coding example: Implementing a Gaussian random walk model
 
 ### Section 4: Advanced Bayesian Time Series Models (25 minutes)
-- ARIMA models in a Bayesian framework
-  - Model specification in PyMC
-  - Parameter interpretation
-  - Comparison with traditional ARIMA
-- Dynamic Linear Models (DLMs)
-  - State-space representation
-  - Time-varying parameters
+- State-Space Models in PyMC
+  - Dynamic Linear Models (DLMs)
+  - Time-varying parameters using random walks
   - Incorporating external regressors
 - Stochastic Volatility Models
   - Modeling changing variance
@@ -103,7 +100,7 @@ For those who like to work in VS Code, you can also run Jupyter notebooks from w
 - Gaussian Process regression for time series
   - Flexible non-parametric approach
   - Kernel selection for time series
-- Live coding example: Implementing a DLM or stochastic volatility model
+- Live coding example: Building a state-space model with random walks
 
 ### Section 5: Model Evaluation and Selection (10 minutes)
 - Posterior predictive checks
