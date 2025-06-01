@@ -23,11 +23,11 @@ dependencies:
   - preliz
   - pyarrow
   - pymc
-  - pymc_extras
   - pydot
   - python-graphviz
   - scipy
   - seaborn
   - setuptools
+  - statsmodels
   - watermark
   - xlrd

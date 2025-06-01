@@ -68,7 +68,7 @@ For those who like to work in VS Code, you can also run Jupyter notebooks from w
   - Normalization/standardization
   - Trend and seasonality decomposition
 
-### Section 2: Bayesian Inference and PyMC (10 minutes)
+### Section 2: Bayesian Inference and PyMC (20 minutes)
 - Brief review of Bayesian inference concepts
   - Bayes' theorem
   - Prior, likelihood, and posterior distributions
@@ -78,7 +78,7 @@ For those who like to work in VS Code, you can also run Jupyter notebooks from w
   - Basic PyMC model structure
   - Model fitting and inference
 
-### Section 3: Basic Bayesian Time Series Models (20 minutes)
+### Section 3: Bayesian Time Series Models (30 minutes)
 - Gaussian Random Walks in PyMC
   - Model specification and implementation
   - Parameter interpretation
@@ -87,9 +87,6 @@ For those who like to work in VS Code, you can also run Jupyter notebooks from w
   - Linear trend models
   - Polynomial trends
   - Seasonal components with Fourier terms
-- Live coding example: Implementing a Gaussian random walk model
-
-### Section 4: Advanced Bayesian Time Series Models (25 minutes)
 - State-Space Models in PyMC
   - Dynamic Linear Models (DLMs)
   - Time-varying parameters using random walks
@@ -100,17 +97,14 @@ For those who like to work in VS Code, you can also run Jupyter notebooks from w
 - Gaussian Process regression for time series
   - Flexible non-parametric approach
   - Kernel selection for time series
-- Live coding example: Building a state-space model with random walks
 
 ### Section 5: Model Evaluation and Selection (10 minutes)
 - Posterior predictive checks
 - Information criteria (WAIC, LOO)
 - Cross-validation for time series
 - Forecast evaluation metrics
-- Bayesian model averaging
 
-### Section 6: Forecasting with Bayesian Models (10 minutes)
+### Section 6: Forecasting with Bayesian Models (15 minutes)
 - Generating predictions
 - Obtaining prediction intervals
 - Incorporating forecast uncertainty
-- Live coding example: Forecasting future values
