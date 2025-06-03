@@ -171,6 +171,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libxml2-2.13.7-h4bc477f_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libzlib-1.3.1-hb9d3cd8_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/llvm-openmp-20.1.3-h024ca30_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/llvmlite-0.44.0-py313h1b76d92_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/logical-unification-0.4.6-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/lz4-c-1.10.0-h5888daf_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/markdown-it-py-3.0.0-pyhd8ed1ab_1.conda
@@ -187,7 +188,9 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/ncurses-6.5-h2d0b736_3.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/nest-asyncio-1.6.0-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/nlohmann_json-3.12.0-h3f2d84a_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/numba-0.61.2-py313h0b724e9_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/numpy-2.2.5-py313h17eae1a_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/nutpie-0.15.1-py313h920b4c0_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/openblas-0.3.29-pthreads_h6ec200e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/openjpeg-2.5.3-h5fbd93e_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/openssl-3.5.0-h7b32b05_0.conda
@@ -2355,6 +2358,20 @@ packages:
   license_family: APACHE
   size: 3185408
   timestamp: 1744934126968
+- conda: https://conda.anaconda.org/conda-forge/linux-64/llvmlite-0.44.0-py313h1b76d92_1.conda
+  sha256: 16fe60ac27ba104c1817e2302b8278324e03226670538bc07e643a2a753f4b95
+  md5: 22837ab06ba7099cb71bb27e8d667277
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  - libstdcxx >=13
+  - libzlib >=1.3.1,<2.0a0
+  - python >=3.13,<3.14.0a0
+  - python_abi 3.13.* *_cp313
+  license: BSD-2-Clause
+  license_family: BSD
+  size: 30004763
+  timestamp: 1742815892040
 - conda: https://conda.anaconda.org/conda-forge/noarch/logical-unification-0.4.6-pyhd8ed1ab_0.conda
   sha256: 2b70aa838779516e05f93158f9f5b15671fc080cec20d05ca0e3a992e391a6e9
   md5: bd04410bd092c8f62f23a3aea41f47eb
@@ -2538,6 +2555,30 @@ packages:
   license_family: MIT
   size: 135906
   timestamp: 1744445169928
+- conda: https://conda.anaconda.org/conda-forge/linux-64/numba-0.61.2-py313h0b724e9_0.conda
+  sha256: 1ee06a071a78eb99e71e5fcf660be1aaf2ee803eb876235a1c6d8fa238ce03b2
+  md5: 3aa3f6875f3f295fac969975b38e17e9
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - _openmp_mutex >=4.5
+  - libgcc >=13
+  - libstdcxx >=13
+  - llvmlite >=0.44.0,<0.45.0a0
+  - numpy >=1.21,<3
+  - numpy >=1.24
+  - python >=3.13,<3.14.0a0
+  - python_abi 3.13.* *_cp313
+  constrains:
+  - tbb >=2021.6.0
+  - cuda-python >=11.6
+  - cuda-version >=11.2
+  - libopenblas !=0.3.6
+  - cudatoolkit >=11.2
+  - scipy >=1.0
+  license: BSD-2-Clause
+  license_family: BSD
+  size: 5823438
+  timestamp: 1744232277965
 - conda: https://conda.anaconda.org/conda-forge/linux-64/numpy-2.2.5-py313h17eae1a_0.conda
   sha256: c0a200d0e53a1acbfa1d1e2277e3337ea2aa8cb584448790317a98c62dcaebce
   md5: 6ceeff9ed72e54e4a2f9a1c88f47bdde
@@ -2555,6 +2596,27 @@ packages:
   license: BSD-3-Clause
   size: 8528362
   timestamp: 1745119324280
+- conda: https://conda.anaconda.org/conda-forge/linux-64/nutpie-0.15.1-py313h920b4c0_0.conda
+  sha256: acc15d97fbb5e52b65440de71e7a2b047b60090f04cd5a0778fd8f3d0f66509f
+  md5: f34130ef9e95914303629c81ee5eab66
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - arviz >=0.20.0
+  - libgcc >=13
+  - numpy >=1.21,<3
+  - pandas >=2.0
+  - pyarrow-core >=12.0.0
+  - python >=3.13,<3.14.0a0
+  - python_abi 3.13.* *_cp313
+  - xarray >=2025.01.2
+  constrains:
+  - pymc-base >=5.20.1
+  - __glibc >=2.17
+  - numba >=0.60
+  license: MIT
+  license_family: MIT
+  size: 1406373
+  timestamp: 1748514110971
 - conda: https://conda.anaconda.org/conda-forge/linux-64/openblas-0.3.29-pthreads_h6ec200e_0.conda
   sha256: 49814ee7c946fc583ea9217dfaad23d6bb75868988062fdd921cedc79affd07a
   md5: 7e4d48870b3258bea920d51b7f495a81
