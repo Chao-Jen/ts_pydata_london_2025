@@ -5,7 +5,9 @@ channels:
 dependencies:
   - python
   - altair
+  - arviz
   - blackjax
+  - ipykernel
   - ipython
   - ipywidgets
   - jax
@@ -14,6 +16,7 @@ dependencies:
   - jupyter_core
   - jupyterlab
   - numba
+  - numpyro
   - nutpie
   - pandas
   - patsy
@@ -25,6 +28,7 @@ dependencies:
   - pymc
   - pydot
   - python-graphviz
+  - pytensor
   - scipy
   - seaborn
   - setuptools
