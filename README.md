@@ -55,56 +55,26 @@ For those who like to work in VS Code, you can also run Jupyter notebooks from w
 
 ## Course Outline
 
-### Section 1: Introduction (20 minutes)
-- Motivation for Bayesian time series analysis
-  - Handling uncertainty
-  - Incorporating prior knowledge 
-  - Flexibility for complex patterns
-- Key characteristics of time series data
-  - Trend, seasonality, and noise components
-  - Stationarity and autocorrelation
-- Data preprocessing for time series analysis
-  - Handling missing values
-  - Normalization/standardization
-  - Trend and seasonality decomposition
+### Section 1: Introduction and Fundamentals
+- Key Characteristics of Time Series Data
+- Classical Time Series Decomposition
+- Autocorrelation Analysis
+- Data Preprocessing Techniques
 
-### Section 2: Bayesian Inference and PyMC (20 minutes)
-- Brief review of Bayesian inference concepts
-  - Bayes' theorem
-  - Prior, likelihood, and posterior distributions
-  - Markov Chain Monte Carlo (MCMC) sampling
-- Introduction to PyMC
-  - API overview
-  - Basic PyMC model structure
-  - Model fitting and inference
+### Section 2: Bayesian Inference and PyMC
+- Bayesian Inference Fundamentals
+- PyMC API and Workflow
+- Polynomial Regression Model
+- Model Diagnostics: Ensuring Reliable Inference
+- The Bayesian Workflow
 
-### Section 3: Bayesian Time Series Models (30 minutes)
-- Gaussian Random Walks in PyMC
-  - Model specification and implementation
-  - Parameter interpretation
-  - Applications to time-varying parameters
-- Bayesian regression for time series
-  - Linear trend models
-  - Polynomial trends
-  - Seasonal components with Fourier terms
-- State-Space Models in PyMC
-  - Dynamic Linear Models (DLMs)
-  - Time-varying parameters using random walks
-  - Incorporating external regressors
-- Stochastic Volatility Models
-  - Modeling changing variance
-  - Applications in finance and economics
-- Gaussian Process regression for time series
-  - Flexible non-parametric approach
-  - Kernel selection for time series
+### Section 3: Bayesian Time Series Models
+- Random Walk Models
+- Autoregressive Models
+- Interpreting Random Walk Forecasts
 
-### Section 5: Model Evaluation and Selection (10 minutes)
-- Posterior predictive checks
-- Information criteria (WAIC, LOO)
-- Cross-validation for time series
-- Forecast evaluation metrics
-
-### Section 6: Forecasting with Bayesian Models (15 minutes)
-- Generating predictions
-- Obtaining prediction intervals
-- Incorporating forecast uncertainty
+### Section 4: Advanced Models
+- Generative Models
+- Modeling Seasonality with Fourier Series
+- Non-parametric Bayesian Models
+- Faster GPs: Hilbert Space Approximate Gaussian Processes (HSGP)
