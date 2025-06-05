@@ -4,17 +4,15 @@ channels:
   - conda-forge
 dependencies:
   - python
-  - altair
   - arviz
-  - blackjax
   - ipykernel
   - ipython
   - ipywidgets
   - jax
-  - jupyter_bokeh
   - jupyter_client
   - jupyter_core
   - jupyterlab
+  - nbformat
   - numba
   - numpyro
   - nutpie
